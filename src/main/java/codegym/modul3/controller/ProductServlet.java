@@ -140,8 +140,6 @@ public class ProductServlet extends HttpServlet {
         Product product = productService.findById(id);
         request.setAttribute("product", product);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/edit.jsp");
-        List<Category>categoryList=categoryService.findAll();
-        request.setAttribute("c",categoryList);
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -152,8 +150,6 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
-        List<Category>categoryList=categoryService.findAll();
-        request.setAttribute("c",categoryList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/create.jsp");
         try {
             dispatcher.forward(request, response);
@@ -167,8 +163,6 @@ public class ProductServlet extends HttpServlet {
     private void showFindAll(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = productService.findAll();
         request.setAttribute("p", products);
-        List<Category> categoryList =categoryService.findAll();
-        request.setAttribute("c",categoryList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
         try {
             dispatcher.forward(request, response);
