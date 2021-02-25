@@ -1,0 +1,16 @@
+codegym/modul3/model/Category.java
+ codegym.modul3.model.Category
+codegym/modul3/service/ICategoryService.java
+ codegym.modul3.service.ICategoryService
+codegym/modul3/service/CategoryService.java
+ codegym.modul3.service.CategoryService
+codegym/modul3/service/IGenericService.java
+ codegym.modul3.service.IGenericService
+codegym/modul3/service/IProductService.java
+ codegym.modul3.service.IProductService
+codegym/modul3/model/Product.java
+ codegym.modul3.model.Product
+codegym/modul3/service/ProductService.java
+ codegym.modul3.service.ProductService
+codegym/modul3/controller/ProductServlet.java
+ codegym.modul3.controller.ProductServlet
